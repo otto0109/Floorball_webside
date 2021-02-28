@@ -1,0 +1,100 @@
+.backgroundImage {
+    background-image: url("../../assets/img/background.JPG");
+    height: 100%;
+    min-width: 100%;
+    top:0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.grayscale {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.welcomeScreenTitle {
+    font: 900 15vmin/25vh Bahnschrift SemiBold;
+    color: transparent;
+    text-transform: uppercase;
+    background: inherit;
+    -webkit-background-clip: text;
+            background-clip: text;
+    filter: grayscale(1) drop-shadow(0.025em 0.025em var(--ion-color-primary-contrast));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollIndicator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    width: 200px;
+    color: white;
+}
+
+
+.mouse {
+    display: block;
+    width: 23px;
+    height: 40px;
+    border-radius: 13px;
+    border: 2px solid var(--ion-color-secondary);
+    margin-bottom: 10px;
+}
+
+.mouse > span {
+    display: block;
+    margin: 6px auto;
+    width: 3px;
+    height: 7px;
+    border-radius: 100%;
+    background: var(--ion-color-secondary);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+}
+
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(12px);
+        -ms-transform: translateY(12px);
+        transform: translateY(12px);
+    }
+}

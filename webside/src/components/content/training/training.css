@@ -1,0 +1,8 @@
+.teamName {
+    border-left: 4px solid var(--ion-color-secondary);
+    padding-left: 20px;
+}
+
+.trainingWrapper {
+    border: 1px solid var(--ion-color-primary-contrast);
+}

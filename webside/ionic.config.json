@@ -1,0 +1,7 @@
+{
+  "name": "webside",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
